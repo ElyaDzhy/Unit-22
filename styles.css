@@ -1,0 +1,33 @@
+/*  
+clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(143, 103, 84, 0.774);
+}
+
+.profile-card {
+  max-width: 320px;
+
+  background-color: rgb(240, 224, 224);
+}
+
+.clipped-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
