@@ -3,3 +3,156 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(111, 111, 223);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.userCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /*around*/
+  align-items: center;
+  text-align: center;
+  width: 25vw;
+  min-height: 400px;
+  height: 100%;
+  max-height: 450px;
+
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px black;
+
+  background-color: white;
+}
+
+.container {
+  margin-top: -50%;
+  width: 140px;
+  height: 160px;
+  background-color: rgb(111, 111, 223);
+
+  /* clip-path property */
+
+  clip-path: polygon(
+    50% 0,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0 75%,
+    0 25%
+  );
+}
+
+.userProfileImg {
+  margin-top: 5px;
+  width: 130px;
+  height: 150px;
+
+  object-fit: cover;
+  object-position: center;
+
+  /* clip-path property */
+
+  clip-path: polygon(
+    50% 0,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0 75%,
+    0 25%
+  );
+}
+
+.userName {
+  font-size: 2rem;
+  color: blue;
+}
+
+.userLog,
+.userLocation {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: rgb(180, 179, 179);
+}
+
+.locationIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.userLog {
+  margin: auto;
+}
+
+.aboutUser {
+  font-size: 1.3rem;
+}
+
+.userLocation > * {
+  display: inline;
+}
+
+.personalUserBlogLink {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+footer::before {
+  margin-top: 5px;
+  content: "";
+  position: fixed;
+  width: 20vw;
+  height: 1px;
+  background-image: linear-gradient(50deg, black, white);
+}
+
+.userLev {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.userLev > li + li {
+  margin-left: 10px;
+}
+
+.staticImg {
+  width: 48px;
+  height: 48px;
+  fill: blue;
+}
+
+.followMe {
+  display: block;
+  /* margin */
+  padding: 10px 0;
+  width: 20vw;
+  box-shadow: inset 1px -5px darkblue;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+}
