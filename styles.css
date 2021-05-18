@@ -9,12 +9,19 @@ clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }
 
 body {
+  padding: 50px 0;
   max-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-
+  flex-wrap: wrap;
   background-color: rgba(143, 103, 84, 0.774);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  max-width: 200px;
+  text-align: center;
 }
 
 .profile-card {
@@ -40,8 +47,35 @@ body {
 .filtered-image:hover,
 .blured-image:hover {
   filter: none;
+  cursor: pointer;
 }
 
 .blured-image {
   filter: blur(1px);
+}
+
+.content {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+  padding: 0 10px;
+  text-align: justify;
+
+  /* column-count: 3; */
+  column-count: auto;
+  column-width: 300px;
+  column-rule: 1px solid rgb(116, 77, 77);
+  column-gap: 20px;
+  /* column-gap: ; */
+  /* column-rule: width style color ; */
+  /* column-fill:auto; (balans) work with width*/
+  border: 1px solid rgb(116, 77, 77);
+}
+
+.col-header {
+  margin: 10px 0;
+  text-align: center;
+  display: block;
+  column-span: all;
+  font-size: 2rem;
 }
