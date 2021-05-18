@@ -37,6 +37,11 @@ body {
   filter: grayscale(100%);
 }
 
-.filtered-image:hover {
+.filtered-image:hover,
+.blured-image:hover {
   filter: none;
+}
+
+.blured-image {
+  filter: blur(1px);
 }
