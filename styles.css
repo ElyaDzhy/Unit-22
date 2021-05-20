@@ -1,0 +1,14 @@
+@charset "utf-8"; /*кодировка*/
+/* @import url();
+@import ""; */
+
+/* @import url("") print; */
+/* @import url("") screen and orientation: landscape; */
+/* @import url("") screen  */
+/* @import url() supports(support-query); */
+@font-face {
+  font-family: family_name;
+  src: url("./../path/font.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
